@@ -14,7 +14,7 @@ driver = webdriver.Chrome(executable_path=cdPath)
 # document.querySelector("#swipeme > div:nth-child(3) > div:nth-child(2) > div.row.justify-content-sm-center > div:nth-child(1)")
 # driver.find_element(By.CLASS_NAME, "")
 
-cocktailsPages = open("D:\Bader's Stuff!\Programming\Python\Python Files\Python Files [2022]\Cocktails Surfer\completeCocktailLinks.txt", "r").read().split("\n")
+cocktailsPages = open("D:\path\Cocktails Surfer\completeCocktailLinks.txt", "r").read().split("\n")
 
 def openPage(url):
     driver.get(url)
@@ -28,7 +28,7 @@ def savePage(pageSpecialName):
     # print(content)
 
     # soup = BeautifulSoup(content)
-    file = open("D:\Bader's Stuff!\Programming\Python\Python Files\Python Files [2022]\Cocktails Surfer\Cocktails Pages\\" + pageSpecialName + ".html", "w", encoding="utf-8")
+    file = open("D:\path\Cocktails Surfer\Cocktails Pages\\" + pageSpecialName + ".html", "w", encoding="utf-8")
     file.write(content)
 
 def main():
