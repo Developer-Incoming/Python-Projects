@@ -11,8 +11,8 @@ driver = webdriver.Chrome(executable_path=cdPath)
 # document.querySelector("#swipeme > div:nth-child(3) > div:nth-child(2) > div.row.justify-content-sm-center > div:nth-child(1)")
 # driver.find_element(By.CLASS_NAME, "")
 
-cocktailLinksFile = open("D:\Bader's Stuff!\Programming\Python\Python Files\Python Files [2022]\Cocktails Surfer\cocktailLinks.txt", "w")
-cocktailsPages = open("D:\Bader's Stuff!\Programming\Python\Python Files\Python Files [2022]\Cocktails Surfer\yay.txt", "r").read().split("\n")
+cocktailLinksFile = open("D:\path\Cocktails Surfer\cocktailLinks.txt", "w")
+cocktailsPages = open("D:\path\Cocktails Surfer\yay.txt", "r").read().split("\n")
 
 def openPage(url):
     driver.get(url)
